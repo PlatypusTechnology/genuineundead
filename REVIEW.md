@@ -11,9 +11,9 @@ Every instance of `"@genuineundead/eslint-config": "^0.2.0"` was then replaced w
 - missing connections:
 A lot of different services are required to run the project.
 The variables were added to `.env` file:
-**Sanity**: created a new account and set `NEXT_PUBLIC_SANITY_PROJECT_ID` and `NEXT_PUBLIC_SANITY_DATASET` was set as `production`. `SANITY_API_TOKEN` was also filled from this service.
-**Wallet Connect**: `NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID` set. Couldn't find where to get `NEXT_PUBLIC_GU_ADDRESS` info.
-**Alchemy**: Did create a new account and set `NEXT_PUBLIC_ALCHEMY_ID`. Coudln't find where to get `NEXT_PUBLIC_ALCHEMY_MAINNET_KEY` and `NEXT_PUBLIC_ALCHEMY_SEPOLIA_KEY`.
+	- **Sanity**: created a new account and set `NEXT_PUBLIC_SANITY_PROJECT_ID` and `NEXT_PUBLIC_SANITY_DATASET` was set as `production`. `SANITY_API_TOKEN` was also filled from this service.
+	- **Wallet Connect**: `NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID` set. Couldn't find where to get `NEXT_PUBLIC_GU_ADDRESS` info.
+	- **Alchemy**: Did create a new account and set `NEXT_PUBLIC_ALCHEMY_ID`. Coudln't find where to get `NEXT_PUBLIC_ALCHEMY_MAINNET_KEY` and `NEXT_PUBLIC_ALCHEMY_SEPOLIA_KEY`.
 
 - vercel deploy:
 Vercel deploy failed because `package.json` errors. I executed the recommended fix (running `pnpm install --no-frozen-lockfile`) and pushed back to the github account I created and linked with vercel. Still, redeploy didn't happen.
