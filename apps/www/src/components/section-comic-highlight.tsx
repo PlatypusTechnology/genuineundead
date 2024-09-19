@@ -60,10 +60,10 @@ export async function SectionComicHighlight({ comic }: { comic: Comic }) {
                   </p>
 
                   <div className="mt-8 max-w-xs space-y-2 max-md:mx-auto sm:space-x-4">
-                    <Link href={`/mint/${token.tokenId}`}>
+                    <Link href={`/mint/${token?.tokenId}`}>
                       <Button>Own a piece</Button>
                     </Link>
-                    <Link href={`/reader/${comic.slug.current}`}>
+                    <Link href={`/reader/${comic?.slug?.current}`}>
                       <Button variant="outline">Read the first edition</Button>
                     </Link>
                   </div>
