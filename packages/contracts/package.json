@@ -10,7 +10,7 @@
     "compile": "pnpm hardhat clean && pnpm hardhat compile"
   },
   "devDependencies": {
-    "@genuineundead/eslint-config": "0.2.0",
+    "@genuineundead/eslint-config": "workspace:^",
     "@genuineundead/prettier-config": "workspace:^",
     "@genuineundead/tsconfig": "workspace:^",
     "@nomicfoundation/hardhat-ethers": "^3.0.4",

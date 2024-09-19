@@ -28,7 +28,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@genuineundead/eslint-config": "0.2.0",
+    "@genuineundead/eslint-config": "workspace:^",
     "@genuineundead/prettier-config": "workspace:^",
     "@genuineundead/tailwind-config": "workspace:^",
     "@genuineundead/tsconfig": "workspace:^",

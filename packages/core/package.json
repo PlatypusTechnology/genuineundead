@@ -20,7 +20,7 @@
     "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
-    "@genuineundead/eslint-config": "0.2.0",
+    "@genuineundead/eslint-config": "workspace:^",
     "@genuineundead/prettier-config": "workspace:^",
     "@genuineundead/tsconfig": "workspace:^",
     "@types/react": "^18.2.21",

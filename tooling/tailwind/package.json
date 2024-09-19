@@ -20,7 +20,7 @@
     "tailwindcss": "3.3.2"
   },
   "devDependencies": {
-    "@genuineundead/eslint-config": "^0.2.0",
+    "@genuineundead/eslint-config": "workspace:^",
     "@genuineundead/prettier-config": "workspace:^",
     "@genuineundead/tsconfig": "workspace:^",
     "eslint": "^8.48.0",
