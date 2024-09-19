@@ -1,0 +1,61 @@
+{
+  "name": "genuine-undead",
+  "private": true,
+  "engines": {
+    "node": ">=v18.12.0"
+  },
+  "packageManager": "pnpm@9.1.2",
+  "scripts": {
+    "build": "turbo build",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo clean",
+    "db:push": "pnpm -F db push",
+    "db:studio": "pnpm -F db dev",
+    "dev": "turbo dev --parallel",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "format": "turbo format --continue -- --cache --cache-location='node_modules/.cache/.prettiercache'",
+    "format:fix": "turbo format --continue -- --write --cache --cache-location='node_modules/.cache/.prettiercache'",
+    "lint": "turbo lint --continue -- --cache --cache-location 'node_modules/.cache/.eslintcache'",
+    "lint:fix": "turbo lint --continue -- --fix --cache --cache-location 'node_modules/.cache/.eslintcache'",
+    "typecheck": "turbo typecheck",
+    "ui:add": "pnpm --filter ui ui:add"
+  },
+  "dependencies": {
+    "@genuineundead/prettier-config": "workspace:^",
+    "@turbo/gen": "^1.10.13",
+    "prettier": "^3.0.3",
+    "turbo": "^1.10.13"
+  },
+  "prettier": "@genuineundead/prettier-config",
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "typescript": "5.5.4"
+  },
+  "resolutions": {
+    "react-is": "18.2.0",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0",
+    "styled-components": "5.3.11",
+    "zod": "3.23.0",
+    "connectkit": "1.6.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.5.4",
+    "viem": "1.15.3",
+    "wagmi": "1.4.0",
+    "@sanity/ui": "1.9.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "connectkit": "1.6.0",
+      "@types/react": "18.2.0",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "@sanity/ui": "1.9.3"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "@genuineundead/core",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "main": "./src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint .",
+    "format": "prettier --check \"**/*.{mjs,ts,md,json}\"",
+    "typecheck": "tsc --noEmit",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "dependencies": {
+    "alchemy-sdk": "^2.10.1",
+    "clsx": "^2.0.0",
+    "iron-session": "^6.3.1",
+    "next": "^13.4.19",
+    "tailwind-merge": "^1.14.0"
+  },
+  "devDependencies": {
+    "@genuineundead/eslint-config": "0.2.0",
+    "@genuineundead/prettier-config": "workspace:^",
+    "@genuineundead/tsconfig": "workspace:^",
+    "@types/react": "^18.2.21",
+    "dotenv-cli": "^7.3.0",
+    "eslint": "^8.48.0",
+    "next-sanity": "5",
+    "sanity": "3.19.0",
+    "typescript": "5.5.4",
+    "@vercel/kv": "2.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@genuineundead/eslint-config/base"
+    ]
+  },
+  "peerDependencies": {
+    "@wagmi/core": "1.4.0",
+    "connectkit": "1.6.0",
+    "viem": "1.15.3",
+    "wagmi": "1.4.0"
+  },
+  "prettier": "@genuineundead/prettier-config"
+}

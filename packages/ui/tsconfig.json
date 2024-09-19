@@ -1,0 +1,12 @@
+{
+  "extends": "@genuineundead/tsconfig/base.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["*.ts"],
+  "exclude": ["node_modules"]
+}

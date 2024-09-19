@@ -1,0 +1,11 @@
+{
+	"apps/**/*.{ts,tsx}": [
+		"pnpm lint:fix"
+	],
+	"packages/**/*.{ts,tsx}": [
+		"pnpm lint:fix"
+	],
+	"tools/**/*.{ts,tsx}": [
+		"pnpm lint:fix"
+	]
+}

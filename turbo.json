@@ -1,0 +1,51 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "globalDependencies": [
+    "**/.env"
+  ],
+  "pipeline": {
+    "compile": {
+      "dependsOn": [],
+      "outputs": [],
+      "cache": false
+    },
+    "build": {
+      "dependsOn": [
+        "^build",
+        "^compile",
+        "@genuineundead/contracts#compile"
+      ],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "next-env.d.ts"
+      ]
+    },
+    "dev": {
+      "persistent": true,
+      "cache": false
+    },
+    "format": {
+      "outputs": [
+        "node_modules/.cache/.prettiercache"
+      ],
+      "outputMode": "new-only"
+    },
+    "lint": {
+      "outputs": [
+        "node_modules/.cache/.eslintcache"
+      ]
+    },
+    "typecheck": {
+      "outputs": [
+        "node_modules/.cache/tsbuildinfo.json"
+      ]
+    },
+    "clean": {
+      "cache": false
+    }
+  },
+  "globalEnv": [
+    "SESSION_SECRET"
+  ]
+}

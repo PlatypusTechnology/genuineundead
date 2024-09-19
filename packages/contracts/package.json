@@ -1,0 +1,36 @@
+{
+  "name": "@genuineundead/contracts",
+  "private": true,
+  "version": "0.1.1",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint .",
+    "format": "prettier --check \"**/*.{mjs,ts,md,json}\"",
+    "compile": "pnpm hardhat clean && pnpm hardhat compile"
+  },
+  "devDependencies": {
+    "@genuineundead/eslint-config": "0.2.0",
+    "@genuineundead/prettier-config": "workspace:^",
+    "@genuineundead/tsconfig": "workspace:^",
+    "@nomicfoundation/hardhat-ethers": "^3.0.4",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/contracts": "^4.9.3",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.47.0",
+    "ethers": "^6.7.1",
+    "hardhat": "^2.17.2",
+    "hardhat-gas-reporter": "^1.0.9",
+    "typechain": "^8.3.1",
+    "typescript": "5.5.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@genuineundead/eslint-config/base"
+    ]
+  },
+  "main": "index.ts",
+  "prettier": "@genuineundead/prettier-config"
+}
